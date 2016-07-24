@@ -1,0 +1,915 @@
+﻿Log file open, 07/24/16 15:07:23
+LogInit:Display: Running engine for game: CheriPlates
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(860162443) SRandInit(860162444).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.063771
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: D:/Programs/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.24-14.07.23:603][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.24-14.07.23:603][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.24-14.07.23:636][  0]LogInit: Computer: BLACKTORCH1
+[2016.07.24-14.07.23:636][  0]LogInit: User: Daniel
+[2016.07.24-14.07.23:636][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.24-14.07.23:636][  0]LogInit: High frequency timer resolution =3.421943 MHz
+[2016.07.24-14.07.23:636][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.07.24-14.07.23:636][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.24-14.07.23:636][  0]LogMemory: Process Physical Memory: 189.36 MB used, 189.36 MB peak
+[2016.07.24-14.07.23:636][  0]LogMemory: Process Virtual Memory: 195.78 MB used, 195.78 MB peak
+[2016.07.24-14.07.23:636][  0]LogMemory: Physical Memory: 3765.59 MB used, 8106.36 MB total
+[2016.07.24-14.07.23:636][  0]LogMemory: Virtual Memory: 521.70 MB used, 8388608.00 MB total
+[2016.07.24-14.07.23:666][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.07.24-14.07.24:014][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.24-14.07.24:029][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 980 Ti' (Feature Level 11_0)
+[2016.07.24-14.07.24:029][  0]LogD3D11RHI:       6047/0/3797 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.07.24-14.07.24:029][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.07.24-14.07.24:032][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.24-14.07.24:032][  0]LogD3D11RHI:     GPU DeviceId: 0x17c8 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.24-14.07.24:032][  0]LogWindows: EnumDisplayDevices:
+[2016.07.24-14.07.24:033][  0]LogWindows:    0. 'NVIDIA GeForce GTX 980 Ti' (P:1 D:1)
+[2016.07.24-14.07.24:033][  0]LogWindows:    1. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows:    2. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows:    3. 'NVIDIA GeForce GTX 980 Ti' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.07.24-14.07.24:033][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2016.07.24-14.07.24:033][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 980 Ti
+[2016.07.24-14.07.24:033][  0]LogD3D11RHI:   Driver Version: 368.69 (internal:10.18.13.6869, unified:368.69)
+[2016.07.24-14.07.24:033][  0]LogD3D11RHI:      Driver Date: 6-29-2016
+[2016.07.24-14.07.24:033][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.07.24-14.07.24:041][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.24-14.07.24:055][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.07.24-14.07.24:055][  0]LogShaderCompilers: Guid format shader working directory is 12 characters bigger than the processId version (C:/Users/Daniel/Desktop/CheriPlates/Intermediate/Shaders/WorkingDirectory/5764/).
+[2016.07.24-14.07.24:055][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Daniel/AppData/Local/Temp/UnrealShaderWorkingDir/021BBF384D91CD126B0639BE2E96A019/'.
+[2016.07.24-14.07.24:055][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.24-14.07.24:804][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.07.24-14.07.24:811][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.24-14.07.24:819][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.24-14.07.24:827][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.24-14.07.24:834][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.24-14.07.24:841][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.07.24-14.07.24:847][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.07.24-14.07.24:854][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.07.24-14.07.24:861][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.07.24-14.07.24:868][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.07.24-14.07.24:875][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.07.24-14.07.24:889][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.07.24-14.07.24:889][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.07.24-14.07.24:889][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.07.24-14.07.24:908][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.07.24-14.07.24:914][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.07.24-14.07.24:921][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.07.24-14.07.24:927][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.07.24-14.07.24:933][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.07.24-14.07.24:934][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.24-14.07.24:982][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache: Loaded boot cache 0.05s 78MB C:/Users/Daniel/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Daniel/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Daniel/Desktop/CheriPlates/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Daniel/Desktop/CheriPlates/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.24-14.07.25:032][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.24-14.07.25:047][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.24-14.07.25:058][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Daniel/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.24-14.07.25:202][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.24-14.07.25:202][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.07.24-14.07.25:348][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.24-14.07.25:348][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.24-14.07.25:348][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.24-14.07.25:604][  0]LogAssetRegistry: FAssetRegistry took 0.0222 seconds to start up
+[2016.07.24-14.07.25:824][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.218424 seconds
+[2016.07.24-14.07.25:828][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.07.24-14.07.25:828][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.07.24-14.07.25:828][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.24-14.07.25:832][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.24-14.07.25:970][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.24-14.07.25:970][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.24-14.07.26:485][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.07.24-14.07.26:664][  0]SourceControl: Info Source control is disabled
+[2016.07.24-14.07.26:665][  0]SourceControl: Info Source control is disabled
+[2016.07.24-14.07.26:670][  0]SourceControl: Info Source control is disabled
+[2016.07.24-14.07.26:674][  0]SourceControl: Info Source control is disabled
+[2016.07.24-14.07.26:805][  0]LogEngine: Initializing Engine...
+[2016.07.24-14.07.26:823][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-99E6A744
+[2016.07.24-14.07.26:838][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-99E6A744
+[2016.07.24-14.07.26:958][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.07.24-14.07.26:969][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.07.26:980][  0]LogInit: FAudioDevice initialized.
+[2016.07.24-14.07.27:004][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Daniel/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.24-14.07.27:010][  0]LogInit: Texture streaming: Enabled
+[2016.07.24-14.07.27:043][  0]LogInit: Transaction tracking system initialized
+[2016.07.24-14.07.27:058][  0]BlueprintLog: New page: Editor Load
+[2016.07.24-14.07.27:104][  0]LocalizationService: Info Localization service is disabled
+[2016.07.24-14.07.27:146][  0]LogConsoleResponse:Display: 
+[2016.07.24-14.07.27:278][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Daniel/Desktop/CheriPlates/Content/' took 0.01s
+[2016.07.24-14.07.27:278][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.07.24-14.07.27:278][  0]LogCook:Display: Mobile HDR setting 0
+[2016.07.24-14.07.27:335][  0]SourceControl: Info Source control is disabled
+[2016.07.24-14.07.27:335][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.07.24-14.07.27:336][  0]LightingResults: New page: Lighting Build
+[2016.07.24-14.07.27:338][  0]MapCheck: New page: Map Check
+[2016.07.24-14.07.27:338][  0]LightingResults: New page: Lighting Build
+[2016.07.24-14.07.27:526][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.07.27:530][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.07.24-14.07.27:534][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.07.24-14.07.27:555][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 20.804ms to complete.
+[2016.07.24-14.07.27:555][  0]LogFileHelpers: Loading map 'Template_Default' took 0.220
+[2016.07.24-14.07.37:559][  0]LogCollectionManager: Loaded 0 collections in 0.001109 seconds
+[2016.07.24-14.07.40:600][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Collections/' took 0.01s
+[2016.07.24-14.07.40:600][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Daniel/Desktop/CheriPlates/Content/Developers/Daniel/Collections/' took 0.01s
+[2016.07.24-14.07.40:600][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Daniel/Desktop/CheriPlates/Content/Collections/' took 0.01s
+[2016.07.24-14.07.40:600][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.07.24-14.07.40:746][  0]LogContentBrowser: Native class hierarchy populated in 0.0547 seconds. Added 2047 classes and 369 folders.
+[2016.07.24-14.07.41:495][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.07.24-14.07.41:544][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.049 s
+[2016.07.24-14.07.41:545][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.07.24-14.07.41:785][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.24-14.07.45:902][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.24-14.07.46:173][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.24-14.07.46:240][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.07.24-14.07.46:491][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.07.24-14.07.46:532][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.24-14.07.46:532][  0]LogLoad: Full Startup: 23.68 seconds (BP compile: 0.02 seconds)
+[2016.07.24-14.07.46:532][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.07.24-14.07.46:532][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.07.24-14.07.46:541][  0]LogOcInput: OculusInput pre-init called
+[2016.07.24-14.07.46:749][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.07.24-14.07.48:119][  0]LogRenderer: Reallocating scene render targets to support 1080x620 (Frame:2).
+[2016.07.24-14.07.48:612][  1]LogAssetRegistry: Asset discovery search completed in 23.0302 seconds
+[2016.07.24-14.07.48:612][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.07.24-14.07.48:612][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2016.07.24-14.09.57:379][802]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-14.09.57:382][802]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 3:09:57 PM)
+[2016.07.24-14.09.57:382][802]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-14.09.57:384][802]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001745s)
+[2016.07.24-14.09.57:384][802]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.09.57:384][802]LogPlayLevel: PIE: World Init took: (0.000601s)
+[2016.07.24-14.09.57:384][802]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002535s)
+[2016.07.24-14.09.57:401][802]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.09.57:408][802]LogInit: FAudioDevice initialized.
+[2016.07.24-14.09.57:506][802]LogWorld: Game class is 'GameMode'
+[2016.07.24-14.09.57:508][802]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-15.09.57
+[2016.07.24-14.09.57:509][802]LogWorld: Bringing up level for play took: 0.001666
+[2016.07.24-14.09.57:512][802]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.07.24-14.09.57:535][802]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.028
+[2016.07.24-14.09.57:538][803]LogRenderer: Reallocating scene render targets to support 3024x1680 (Frame:374).
+[2016.07.24-14.14.49:244][ 62]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-14.14.49:244][ 62]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 3:14:49 PM)
+[2016.07.24-14.14.49:244][ 62]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-14.14.49:246][ 62]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001833s)
+[2016.07.24-14.14.49:247][ 62]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.14.49:247][ 62]LogPlayLevel: PIE: World Init took: (0.000893s)
+[2016.07.24-14.14.49:247][ 62]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002938s)
+[2016.07.24-14.14.49:258][ 62]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.14.49:266][ 62]LogInit: FAudioDevice initialized.
+[2016.07.24-14.14.49:358][ 62]LogWorld: Game class is 'GameMode'
+[2016.07.24-14.14.49:360][ 62]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-15.14.49
+[2016.07.24-14.14.49:360][ 62]LogWorld: Bringing up level for play took: 0.001645
+[2016.07.24-14.14.49:393][ 62]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.12
+[2016.07.24-14.27.44:688][620]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 111 classes and 0 folders.
+[2016.07.24-14.28.16:783][733]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.VRpawn:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.SKEL_VRpawn_C' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.VRpawn_C' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.VRpawn:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.VRpawn:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:519][339]LogMetaData: Removing '/Game/VRpawn.VRpawn:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Pawn.PackageMetaData'
+[2016.07.24-14.30.25:538][339]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-14.30.25:549][339]LogSavePackage: Save=8.82ms
+[2016.07.24-14.30.25:549][339]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn625356A641C8630315E6708B9E638300.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-14.30.25:552][339]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-14.30.27:358][543]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.07.24-14.30.53:147][233]LogMetaData: Removing '/Game/VRGameMode.VRGameMode:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/GameMode.PackageMetaData'
+[2016.07.24-14.30.53:147][233]LogMetaData: Removing '/Game/VRGameMode.SKEL_VRGameMode_C' ref from Metadata '/Game/GameMode.PackageMetaData'
+[2016.07.24-14.30.53:147][233]LogMetaData: Removing '/Game/VRGameMode.VRGameMode_C' ref from Metadata '/Game/GameMode.PackageMetaData'
+[2016.07.24-14.30.53:147][233]LogMetaData: Removing '/Game/VRGameMode.VRGameMode:EventGraph.K2Node_Event_0' ref from Metadata '/Game/GameMode.PackageMetaData'
+[2016.07.24-14.30.53:147][233]LogMetaData: Removing '/Game/VRGameMode.VRGameMode:EventGraph.K2Node_Event_1' ref from Metadata '/Game/GameMode.PackageMetaData'
+[2016.07.24-14.30.53:171][233]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRGameMode" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset" SILENT=true
+[2016.07.24-14.30.53:180][233]LogSavePackage: Save=8.70ms
+[2016.07.24-14.30.53:180][233]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRGameMode0E08313A41D9866DBB6DD6B89839E26D.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset'
+[2016.07.24-14.30.53:181][233]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset
+[2016.07.24-14.33.33:382][840]LogVSAccessor: Couldn't get item operations. Visual Studio may still be initializing.
+[2016.07.24-14.33.53:671][206]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.07.24-14.33.55:140][379]Cmd: UpdateLandscapeSetup
+[2016.07.24-14.37.18:921][524]BlueprintLog: New page: Compile VRpawn
+[2016.07.24-14.37.19:035][524]BlueprintEditorCompileResults: Info [1796.15] Compile of VRpawn successful! [in 114 ms] (/Game/VRpawn.VRpawn)
+[2016.07.24-14.37.22:063][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-14.37.22:080][864]LogSavePackage: Save=10.99ms
+[2016.07.24-14.37.22:080][864]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawnB5316A16434278A90E99D2BB33938252.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-14.37.22:081][864]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-14.37.44:190][679]BlueprintLog: New page: Compile VRGameMode
+[2016.07.24-14.37.44:255][679]BlueprintEditorCompileResults: Info [1821.37] Compile of VRGameMode successful! [in 65 ms] (/Game/VRGameMode.VRGameMode)
+[2016.07.24-14.37.45:014][763]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRGameMode" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset" SILENT=true
+[2016.07.24-14.37.45:028][763]LogSavePackage: Save=8.48ms
+[2016.07.24-14.37.45:028][763]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRGameMode02DEF99A4F91F7BD0ADE7B9E23FC5950.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset'
+[2016.07.24-14.37.45:028][763]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRGameMode.uasset
+[2016.07.24-14.37.50:258][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.07.24-14.37.50:308][375]LogSavePackage: Save=50.10ms
+[2016.07.24-14.37.50:308][375]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Untitled_1_Auto1F94557F04BF398EC82B1EA92045B9184.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
+[2016.07.24-14.37.50:309][375]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto1.umap
+[2016.07.24-14.37.50:312][375]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.068
+[2016.07.24-14.37.50:312][375]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.068
+[2016.07.24-14.37.50:327][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameMode" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/GameMode_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-14.37.50:331][375]LogSavePackage: Save=2.40ms
+[2016.07.24-14.37.50:332][375]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/GameMode_Auto1006E2E09487EF64A1CBE1680121BBA3E.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/GameMode_Auto1.uasset'
+[2016.07.24-14.37.50:332][375]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/GameMode_Auto1.uasset
+[2016.07.24-14.37.50:332][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Pawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/Pawn_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-14.37.50:336][375]LogSavePackage: Save=2.90ms
+[2016.07.24-14.37.50:336][375]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Pawn_Auto1B43C62A8473D3C144661BCBE68D016AC.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/Pawn_Auto1.uasset'
+[2016.07.24-14.37.50:336][375]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/Pawn_Auto1.uasset
+[2016.07.24-14.37.50:336][375]LogFileHelpers: Auto-saving content packages took 0.023
+[2016.07.24-14.37.52:988][686]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.07.24-14.38.00:818][881]LogWindows: LaunchFileInExternalEditor D:/Programs/Epic Games/4.12/Engine/Source/Runtime/Engine/Classes/GameFramework/GameMode.h 
+[2016.07.24-14.38.02:418][881]LogWindows: Launch application code for D:/Programs/Epic Games/4.12/Engine/Source/Runtime/Engine/Classes/GameFramework/GameMode.h : 42
+[2016.07.24-14.38.02:418][881]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:420][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:421][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:422][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:423][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:425][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.02:425][881]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.24-14.38.39:737][406]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.07.24-14.38.46:356][198]Cmd: TRANSACTION UNDO
+[2016.07.24-14.38.46:356][198]LogEditorTransaction: Undo Move Actors
+[2016.07.24-14.39.25:980][747]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-14.39.25:980][747]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 3:39:25 PM)
+[2016.07.24-14.39.25:980][747]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-14.39.25:982][747]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001907s)
+[2016.07.24-14.39.25:983][747]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.39.25:983][747]LogPlayLevel: PIE: World Init took: (0.000710s)
+[2016.07.24-14.39.25:983][747]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002783s)
+[2016.07.24-14.39.26:000][747]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.39.26:007][747]LogInit: FAudioDevice initialized.
+[2016.07.24-14.39.26:100][747]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-14.39.26:103][747]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-15.39.26
+[2016.07.24-14.39.26:103][747]LogWorld: Bringing up level for play took: 0.001338
+[2016.07.24-14.39.26:156][747]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.614
+[2016.07.24-14.39.57:038][334]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-14.39.57:038][334]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 3:39:57 PM)
+[2016.07.24-14.39.57:038][334]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-14.39.57:039][334]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001363s)
+[2016.07.24-14.39.57:040][334]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.39.57:040][334]LogPlayLevel: PIE: World Init took: (0.000499s)
+[2016.07.24-14.39.57:040][334]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002019s)
+[2016.07.24-14.39.57:060][334]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.39.57:069][334]LogInit: FAudioDevice initialized.
+[2016.07.24-14.39.57:162][334]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-14.39.57:164][334]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-15.39.57
+[2016.07.24-14.39.57:164][334]LogWorld: Bringing up level for play took: 0.001506
+[2016.07.24-14.39.57:216][334]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.327
+[2016.07.24-14.43.13:734][212]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-14.43.13:734][212]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 3:43:13 PM)
+[2016.07.24-14.43.13:734][212]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-14.43.13:736][212]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001610s)
+[2016.07.24-14.43.13:736][212]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-14.43.13:737][212]LogPlayLevel: PIE: World Init took: (0.000832s)
+[2016.07.24-14.43.13:737][212]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002606s)
+[2016.07.24-14.43.13:758][212]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-14.43.13:765][212]LogInit: FAudioDevice initialized.
+[2016.07.24-14.43.13:865][212]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-14.43.13:867][212]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-15.43.13
+[2016.07.24-14.43.13:867][212]LogWorld: Bringing up level for play took: 0.001511
+[2016.07.24-14.43.13:922][212]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.376
+[2016.07.24-14.49.51:519][859]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.07.24-14.49.51:544][859]LogSavePackage: Save=24.30ms
+[2016.07.24-14.49.51:544][859]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Untitled_1_Auto2E8B326594965F96B46D735A41A5906B0.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
+[2016.07.24-14.49.51:544][859]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Temp/Untitled_1_Auto2.umap
+[2016.07.24-14.49.51:546][859]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.042
+[2016.07.24-14.49.51:546][859]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.042
+[2016.07.24-14.59.55:770][764]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.018
+[2016.07.24-14.59.55:772][764]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/VRpawn] ([1] browsable assets)...
+[2016.07.24-14.59.55:787][764]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/VRpawn.VRpawn]
+[2016.07.24-14.59.55:787][764]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRpawn]
+[2016.07.24-14.59.55:787][764]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-14.59.55:820][764]LogSavePackage: Save=18.92ms
+[2016.07.24-14.59.55:820][764]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn_Auto339F769B0417DDA64A9D166869C4C7940.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto3.uasset'
+[2016.07.24-14.59.55:828][764]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto3.uasset
+[2016.07.24-14.59.55:828][764]LogFileHelpers: Auto-saving content packages took 0.056
+[2016.07.24-15.01.38:525][372]BlueprintLog: New page: Compile VRpawn
+[2016.07.24-15.01.38:693][372]BlueprintEditorCompileResults: Info [3255.78] Compile of VRpawn successful! [in 167 ms] (/Game/VRpawn.VRpawn)
+[2016.07.24-15.01.39:221][424]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-15.01.39:239][424]LogSavePackage: Save=16.12ms
+[2016.07.24-15.01.39:239][424]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn7D1E0B774097EC2FC00A66BFABA62651.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-15.01.39:241][424]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-15.06.27:930][224]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-15.06.27:930][224]PIE: New page: PIE session: Untitled_1 (Jul 24, 2016, 4:06:27 PM)
+[2016.07.24-15.06.27:930][224]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2016.07.24-15.06.27:932][224]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001828s)
+[2016.07.24-15.06.27:933][224]LogAIModule: Creating AISystem for world Untitled_1
+[2016.07.24-15.06.27:933][224]LogPlayLevel: PIE: World Init took: (0.000658s)
+[2016.07.24-15.06.27:933][224]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002661s)
+[2016.07.24-15.06.27:949][224]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-15.06.27:956][224]LogInit: FAudioDevice initialized.
+[2016.07.24-15.06.28:052][224]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-15.06.28:054][224]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2016.07.24-16.06.28
+[2016.07.24-15.06.28:054][224]LogWorld: Bringing up level for play took: 0.001524
+[2016.07.24-15.06.28:116][224]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.542
+[2016.07.24-15.07.10:690][ 54]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/1" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.07.24-15.07.10:744][ 54]LogSavePackage: Save=37.21ms
+[2016.07.24-15.07.10:744][ 54]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/1A89F351748A16059057AB3A727C47A47.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap'
+[2016.07.24-15.07.10:748][ 54]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap
+[2016.07.24-15.07.10:826][ 54]LogFileHelpers: Saving map '1' took 1.032
+[2016.07.24-15.51.59:799][269]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/1' took 0.016
+[2016.07.24-15.51.59:800][269]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/VRpawn] ([1] browsable assets)...
+[2016.07.24-15.51.59:811][269]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/VRpawn.VRpawn]
+[2016.07.24-15.51.59:811][269]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRpawn]
+[2016.07.24-15.51.59:811][269]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-15.51.59:833][269]LogSavePackage: Save=17.32ms
+[2016.07.24-15.51.59:833][269]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn_Auto4731B3C2A49AA3D610F99CBB513DFE8A5.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto4.uasset'
+[2016.07.24-15.51.59:834][269]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto4.uasset
+[2016.07.24-15.51.59:834][269]LogFileHelpers: Auto-saving content packages took 0.035
+[2016.07.24-15.53.00:010][789]LogEditorTransaction: Undo Modify Component(s)
+[2016.07.24-15.53.00:672][846]LogEditorTransaction: Undo Modify Component(s)
+[2016.07.24-15.53.07:089][549]LogEditorTransaction: Undo Modify Component(s)
+[2016.07.24-15.55.21:273][449]BlueprintLog: New page: Compile VRpawn
+[2016.07.24-15.55.21:501][449]BlueprintEditorCompileResults: Info [6478.53] Compile of VRpawn successful! [in 228 ms] (/Game/VRpawn.VRpawn)
+[2016.07.24-15.55.22:372][538]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-15.55.22:392][538]LogSavePackage: Save=19.29ms
+[2016.07.24-15.55.22:393][538]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn55B86FC646BFF38F1349DE8868E6FD31.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-15.55.22:394][538]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-15.55.25:402][879]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-15.55.25:402][879]PIE: New page: PIE session: 1 (Jul 24, 2016, 4:55:25 PM)
+[2016.07.24-15.55.25:402][879]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-15.55.25:405][879]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002759s)
+[2016.07.24-15.55.25:405][879]LogAIModule: Creating AISystem for world 1
+[2016.07.24-15.55.25:405][879]LogPlayLevel: PIE: World Init took: (0.000522s)
+[2016.07.24-15.55.25:406][879]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.003472s)
+[2016.07.24-15.55.25:423][879]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-15.55.25:431][879]LogInit: FAudioDevice initialized.
+[2016.07.24-15.55.25:529][879]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-15.55.25:532][879]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-16.55.25
+[2016.07.24-15.55.25:532][879]LogWorld: Bringing up level for play took: 0.001483
+[2016.07.24-15.55.25:590][879]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 -0.042
+[2016.07.24-15.58.08:263][860]LogEditorTransaction: Undo Modify Component(s)
+[2016.07.24-15.58.08:829][905]LogEditorTransaction: Undo Modify Component(s)
+[2016.07.24-15.58.12:437][328]BlueprintLog: New page: Compile VRpawn
+[2016.07.24-15.58.12:510][328]BlueprintEditorCompileResults: Info [6649.53] Compile of VRpawn successful! [in 72 ms] (/Game/VRpawn.VRpawn)
+[2016.07.24-15.58.13:340][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-15.58.13:363][422]LogSavePackage: Save=17.86ms
+[2016.07.24-15.58.13:363][422]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawnB8661BCF418EE8C411B1A7B0951190C8.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-15.58.13:365][422]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-15.58.15:972][730]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-15.58.15:973][730]PIE: New page: PIE session: 1 (Jul 24, 2016, 4:58:15 PM)
+[2016.07.24-15.58.15:973][730]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-15.58.15:974][730]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001669s)
+[2016.07.24-15.58.15:975][730]LogAIModule: Creating AISystem for world 1
+[2016.07.24-15.58.15:975][730]LogPlayLevel: PIE: World Init took: (0.000581s)
+[2016.07.24-15.58.15:975][730]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.002420s)
+[2016.07.24-15.58.15:993][730]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-15.58.16:000][730]LogInit: FAudioDevice initialized.
+[2016.07.24-15.58.16:093][730]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-15.58.16:095][730]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-16.58.16
+[2016.07.24-15.58.16:096][730]LogWorld: Bringing up level for play took: 0.001894
+[2016.07.24-15.58.16:140][730]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 0.504
+[2016.07.24-16.12.13:927][827]BlueprintLog: New page: Compile Sphere
+[2016.07.24-16.12.14:082][827]BlueprintEditorCompileResults: Info [7491.09] Compile of Sphere successful! [in 154 ms] (/Game/Sphere.Sphere)
+[2016.07.24-16.12.17:992][264]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Sphere" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/Sphere.uasset" SILENT=true
+[2016.07.24-16.12.18:009][264]LogSavePackage: Save=15.83ms
+[2016.07.24-16.12.18:010][264]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Sphere1FFC78F34E7788075A54C0A4712F89CC.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/Sphere.uasset'
+[2016.07.24-16.12.18:011][264]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/Sphere.uasset
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.BP_Sphere:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.SKEL_BP_Sphere_C' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.BP_Sphere_C' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.BP_Sphere:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.BP_Sphere:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:845][941]LogMetaData: Removing '/Game/BP_Sphere.BP_Sphere:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Sphere.PackageMetaData'
+[2016.07.24-16.16.32:884][941]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Sphere" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset" SILENT=true
+[2016.07.24-16.16.32:901][941]LogSavePackage: Save=15.88ms
+[2016.07.24-16.16.32:901][941]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/BP_Sphere78AF8F0842EDB64E0A57478082B1C36D.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset'
+[2016.07.24-16.16.32:902][941]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset
+[2016.07.24-16.19.45:969][207]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/1' took 0.043
+[2016.07.24-16.19.45:970][207]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/VRpawn] ([1] browsable assets)...
+[2016.07.24-16.19.45:984][207]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/VRpawn.VRpawn]
+[2016.07.24-16.19.45:984][207]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRpawn]
+[2016.07.24-16.19.45:984][207]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-16.19.46:005][207]LogSavePackage: Save=17.15ms
+[2016.07.24-16.19.46:005][207]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn_Auto56F41CF9B4BE6512E2EC698AEC8B9DDA9.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto5.uasset'
+[2016.07.24-16.19.46:007][207]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto5.uasset
+[2016.07.24-16.19.46:007][207]LogFileHelpers: Auto-saving content packages took 0.037
+[2016.07.24-16.23.20:980][ 46]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.07.24-16.28.26:969][ 86]LogEditorTransaction: Undo Move Node
+[2016.07.24-16.28.31:351][576]LogEditorTransaction: Undo Add Node
+[2016.07.24-16.28.41:490][680]LogEditorTransaction: Undo Add Node
+[2016.07.24-16.28.41:736][702]LogEditorTransaction: Undo Move Node
+[2016.07.24-16.29.46:848][217]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/1' took 0.055
+[2016.07.24-16.29.46:849][217]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/VRpawn] ([1] browsable assets)...
+[2016.07.24-16.29.46:865][217]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/VRpawn.VRpawn]
+[2016.07.24-16.29.46:865][217]OBJ SavePackage: Finished generating thumbnails for package [/Game/VRpawn]
+[2016.07.24-16.29.46:865][217]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2016.07.24-16.29.46:917][217]LogSavePackage: Save=47.24ms
+[2016.07.24-16.29.46:917][217]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawn_Auto6BED2F34C406EEEE27B8D578963D9B336.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto6.uasset'
+[2016.07.24-16.29.46:918][217]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Saved/Autosaves/Game/VRpawn_Auto6.uasset
+[2016.07.24-16.29.46:918][217]LogFileHelpers: Auto-saving content packages took 0.069
+[2016.07.24-16.30.10:303][863]LogEditorTransaction: Undo Create Pin Link
+[2016.07.24-16.30.57:819][366]BlueprintLog: New page: Compile VRpawn
+[2016.07.24-16.30.58:063][366]BlueprintEditorCompileResults: Info [8615.04] Compile of VRpawn successful! [in 244 ms] (/Game/VRpawn.VRpawn)
+[2016.07.24-16.30.59:099][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-16.30.59:123][483]LogSavePackage: Save=22.90ms
+[2016.07.24-16.30.59:123][483]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawnC3111E3E4D235FE244639F918A6F73C1.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-16.30.59:125][483]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-16.31.42:436][477]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-16.31.42:436][477]PIE: New page: PIE session: 1 (Jul 24, 2016, 5:31:42 PM)
+[2016.07.24-16.31.42:436][477]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-16.31.42:438][477]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001940s)
+[2016.07.24-16.31.42:438][477]LogAIModule: Creating AISystem for world 1
+[2016.07.24-16.31.42:438][477]LogPlayLevel: PIE: World Init took: (0.000535s)
+[2016.07.24-16.31.42:439][477]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.002772s)
+[2016.07.24-16.31.42:461][477]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-16.31.42:468][477]LogInit: FAudioDevice initialized.
+[2016.07.24-16.31.42:561][477]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-16.31.42:563][477]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-17.31.42
+[2016.07.24-16.31.42:563][477]LogWorld: Bringing up level for play took: 0.001279
+[2016.07.24-16.31.42:621][477]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 0.945
+[2016.07.24-16.31.55:789][650]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.31.55:789][650]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.31.55:789][650]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.31.55:790][650]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.00:816][100]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.32.00:816][100]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.00:816][100]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.32.00:816][100]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.01:698][179]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.32.01:699][179]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.01:699][179]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.32.01:699][179]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.02:380][240]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.32.02:380][240]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.02:380][240]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.32.02:380][240]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.03:675][356]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.32.03:675][356]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.03:676][356]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.32.03:676][356]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.06:434][603]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.32.06:434][603]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.32.06:435][603]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.32.06:435][603]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.33.18:930][417]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-16.33.18:930][417]PIE: New page: PIE session: 1 (Jul 24, 2016, 5:33:18 PM)
+[2016.07.24-16.33.18:930][417]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-16.33.18:931][417]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001427s)
+[2016.07.24-16.33.18:932][417]LogAIModule: Creating AISystem for world 1
+[2016.07.24-16.33.18:932][417]LogPlayLevel: PIE: World Init took: (0.000529s)
+[2016.07.24-16.33.18:932][417]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.002207s)
+[2016.07.24-16.33.18:962][417]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-16.33.18:969][417]LogInit: FAudioDevice initialized.
+[2016.07.24-16.33.19:065][417]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-16.33.19:066][417]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-17.33.19
+[2016.07.24-16.33.19:067][417]LogWorld: Bringing up level for play took: 0.001411
+[2016.07.24-16.33.19:124][417]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 -0.553
+[2016.07.24-16.34.52:907][ 59]BlueprintLog: New page: Compile BP_Sphere
+[2016.07.24-16.34.53:043][ 59]BlueprintEditorCompileResults: Info [8850.02] Compile of BP_Sphere successful! [in 135 ms] (/Game/BP_Sphere.BP_Sphere)
+[2016.07.24-16.34.53:792][134]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Sphere" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset" SILENT=true
+[2016.07.24-16.34.53:812][134]LogSavePackage: Save=14.99ms
+[2016.07.24-16.34.53:812][134]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/BP_Sphere164ED8A8468B0E7EC6F444B8807B3BFE.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset'
+[2016.07.24-16.34.53:814][134]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset
+[2016.07.24-16.34.56:108][397]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-16.34.56:108][397]PIE: New page: PIE session: 1 (Jul 24, 2016, 5:34:56 PM)
+[2016.07.24-16.34.56:108][397]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-16.34.56:110][397]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001392s)
+[2016.07.24-16.34.56:110][397]LogAIModule: Creating AISystem for world 1
+[2016.07.24-16.34.56:110][397]LogPlayLevel: PIE: World Init took: (0.000449s)
+[2016.07.24-16.34.56:110][397]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.002005s)
+[2016.07.24-16.34.56:127][397]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-16.34.56:133][397]LogInit: FAudioDevice initialized.
+[2016.07.24-16.34.56:229][397]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-16.34.56:231][397]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-17.34.56
+[2016.07.24-16.34.56:232][397]LogWorld: Bringing up level for play took: 0.001166
+[2016.07.24-16.34.56:295][397]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 0.615
+[2016.07.24-16.35.15:610][121]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.35.15:610][121]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.15:610][121]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.35.15:610][121]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.21:228][624]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.35.21:229][624]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.21:229][624]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:00A1
+[2016.07.24-16.35.21:229][624]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.21:787][674]LogScript:Warning: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+	VRpawn_C /Game/UEDPIE_0_1.1:PersistentLevel.VRpawn_C_0
+	Function /Game/VRpawn.VRpawn_C:ExecuteUbergraph_VRpawn:0146
+[2016.07.24-16.35.21:787][674]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.21:787][674]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:267][717]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:268][717]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:547][742]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:547][742]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:770][762]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.22:770][762]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:004][783]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:004][783]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:262][806]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:262][806]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:508][828]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:508][828]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:742][849]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:742][849]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:954][868]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.23:954][868]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:155][886]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:156][886]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:379][906]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:379][906]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:580][924]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:580][924]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:803][944]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.24:803][944]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:004][962]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:004][962]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:183][978]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:183][978]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:396][997]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.35.25:396][997]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.37.21:243][788]BlueprintLog: New page: Compile BP_Sphere
+[2016.07.24-16.37.21:341][788]BlueprintEditorCompileResults: Info [8998.32] Compile of BP_Sphere successful! [in 97 ms] (/Game/BP_Sphere.BP_Sphere)
+[2016.07.24-16.37.21:909][846]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Sphere" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset" SILENT=true
+[2016.07.24-16.37.21:926][846]LogSavePackage: Save=15.65ms
+[2016.07.24-16.37.21:926][846]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/BP_Sphere2FB2ACAE450C1D314258A8AF6342E6D4.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset'
+[2016.07.24-16.37.21:928][846]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/BP_Sphere.uasset
+[2016.07.24-16.37.25:187][219]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.24-16.37.25:188][219]PIE: New page: PIE session: 1 (Jul 24, 2016, 5:37:25 PM)
+[2016.07.24-16.37.25:188][219]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_1
+[2016.07.24-16.37.25:189][219]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001494s)
+[2016.07.24-16.37.25:190][219]LogAIModule: Creating AISystem for world 1
+[2016.07.24-16.37.25:190][219]LogPlayLevel: PIE: World Init took: (0.000513s)
+[2016.07.24-16.37.25:190][219]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/1.1 to /Game/UEDPIE_0_1.1 (0.002162s)
+[2016.07.24-16.37.25:210][219]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.07.24-16.37.25:218][219]LogInit: FAudioDevice initialized.
+[2016.07.24-16.37.25:313][219]LogWorld: Game class is 'VRGameMode_C'
+[2016.07.24-16.37.25:315][219]LogWorld: Bringing World /Game/UEDPIE_0_1.1 up for play (max tick rate 0) at 2016.07.24-17.37.25
+[2016.07.24-16.37.25:315][219]LogWorld: Bringing up level for play took: 0.001352
+[2016.07.24-16.37.25:369][219]PIE: Info Play in editor start time for /Game/UEDPIE_0_1 -0.314
+[2016.07.24-16.37.29:538][587]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.37.29:538][587]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.33:933][352]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.33:933][352]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:168][373]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:168][373]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:481][401]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:481][401]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:648][416]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:648][416]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:793][429]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:794][429]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:972][445]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.34:973][445]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:151][461]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:151][461]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:308][475]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:308][475]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:464][489]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:464][489]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:620][503]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:621][503]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:777][517]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:777][517]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:933][531]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.35:933][531]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.36:101][546]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.38.36:101][546]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue from function: 'ExecuteUbergraph_VRpawn' from node: SpawnActor BP Sphere in graph: EventGraph in object: VRpawn with description: Accessed None trying to read property CallFunc_GetPlayerCharacter_ReturnValue
+[2016.07.24-16.43.46:034][893]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2016.07.24-16.43.48:970][236]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/1" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.07.24-16.43.49:128][236]LogSavePackage: Save=36.84ms
+[2016.07.24-16.43.49:128][236]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/1067D04CC4D2907C7869A31B980C6A72D.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap'
+[2016.07.24-16.43.49:129][236]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/1.umap
+[2016.07.24-16.43.57:953][280]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/GameMode" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/GameMode.uasset" SILENT=true
+[2016.07.24-16.43.57:960][280]LogSavePackage: Save=3.13ms
+[2016.07.24-16.43.57:960][280]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/GameMode793D34284484950FDF9632A834DA8F22.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/GameMode.uasset'
+[2016.07.24-16.43.57:963][280]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/GameMode.uasset
+[2016.07.24-16.43.57:970][280]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Pawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/Pawn.uasset" SILENT=true
+[2016.07.24-16.43.57:974][280]LogSavePackage: Save=2.46ms
+[2016.07.24-16.43.57:974][280]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/PawnD699FD674F24F9F425F5E8A1D9D56FEB.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/Pawn.uasset'
+[2016.07.24-16.43.57:975][280]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/Pawn.uasset
+[2016.07.24-16.43.57:995][280]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VRpawn" FILE="C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset" SILENT=true
+[2016.07.24-16.43.58:022][280]LogSavePackage: Save=21.72ms
+[2016.07.24-16.43.58:022][280]LogSavePackage: Moving 'C:/Users/Daniel/Desktop/CheriPlates/Saved/VRpawnED58E0074BE9B06841E036AAD1A71F8A.tmp' to 'C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset'
+[2016.07.24-16.43.58:023][280]LogSavePackage:Display: Finished SavePackage C:/Users/Daniel/Desktop/CheriPlates/Content/VRpawn.uasset
+[2016.07.24-16.44.01:348][654]Cmd: QUIT_EDITOR
+[2016.07.24-16.44.01:397][654]LogExit: Preparing to exit.
+[2016.07.24-16.44.01:627][654]LogExit: Editor shut down
+[2016.07.24-16.44.01:627][654]LogExit: Transaction tracking system shut down
+[2016.07.24-16.44.01:750][654]LogObj: Freed 0b from 0 cluster array pools.
+[2016.07.24-16.44.01:750][654]LogExit: Object subsystem successfully closed.
+[2016.07.24-16.44.01:761][654]LogD3D11RHI: Shutdown
+[2016.07.24-16.44.01:761][654]LogD3D11RHI: CleanupD3DDevice
+[2016.07.24-16.44.01:762][654]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.07.24-16.44.01:767][654]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (217)
+[2016.07.24-16.44.01:767][654]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (216)
+[2016.07.24-16.44.01:767][654]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.07.24-16.44.01:768][654]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.07.24-16.44.01:769][654]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.07.24-16.44.01:770][654]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.07.24-16.44.02:127][654]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.07.24-16.44.02:128][654]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.07.24-16.44.02:168][654]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.07.24-16.44.02:169][654]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.07.24-16.44.02:332][654]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.07.24-16.44.02:333][654]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.07.24-16.44.02:333][654]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.07.24-16.44.02:333][654]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.07.24-16.44.02:334][654]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.07.24-16.44.02:334][654]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.07.24-16.44.02:434][654]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.07.24-16.44.02:435][654]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.07.24-16.44.02:435][654]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.07.24-16.44.02:435][654]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.07.24-16.44.02:435][654]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.07.24-16.44.02:435][654]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.07.24-16.44.02:436][654]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.07.24-16.44.02:437][654]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.07.24-16.44.02:533][654]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.07.24-16.44.02:534][654]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.07.24-16.44.02:534][654]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.07.24-16.44.02:534][654]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.07.24-16.44.02:541][654]LogDerivedDataCache: Shutdown
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.07.24-16.44.02:541][654]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.07.24-16.44.04:041][654]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.07.24-16.44.04:042][654]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.07.24-16.44.04:045][654]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.07.24-16.44.04:046][654]LogExit: Exiting.
+[2016.07.24-16.44.04:056][654]Log file closed, 07/24/16 17:44:04
